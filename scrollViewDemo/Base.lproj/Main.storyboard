@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -19,24 +18,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fbQ-uV-wxt">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.25" maximumZoomScale="10" translatesAutoresizingMaskIntoConstraints="NO" id="fbQ-uV-wxt">
                                 <rect key="frame" x="20" y="20" width="560" height="560"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="Panorama_View" translatesAutoresizingMaskIntoConstraints="NO" id="lze-e8-aX5">
-                                        <rect key="frame" x="-2809" y="-213" width="7364" height="800"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="Panorama_View" translatesAutoresizingMaskIntoConstraints="NO" id="ZAb-ax-552">
+                                        <rect key="frame" x="-3386" y="-220" width="7364" height="800"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="lze-e8-aX5" secondAttribute="height" multiplier="1841:200" id="MfM-xv-ypB"/>
+                                            <constraint firstAttribute="height" constant="800" id="Wnv-sc-jXa"/>
+                                            <constraint firstAttribute="width" constant="7364" id="Zoi-Fl-F8m"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.88220186514622567" green="0.49792394543880414" blue="0.9078525641025641" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="lze-e8-aX5" secondAttribute="trailing" id="0UH-1Q-YMo"/>
-                                    <constraint firstItem="lze-e8-aX5" firstAttribute="top" secondItem="fbQ-uV-wxt" secondAttribute="top" id="7Kr-4s-Yjf"/>
-                                    <constraint firstItem="lze-e8-aX5" firstAttribute="leading" secondItem="fbQ-uV-wxt" secondAttribute="leading" id="T1d-Oh-odw"/>
-                                    <constraint firstItem="lze-e8-aX5" firstAttribute="height" secondItem="fbQ-uV-wxt" secondAttribute="height" id="Wab-WY-tS0"/>
-                                    <constraint firstAttribute="bottom" secondItem="lze-e8-aX5" secondAttribute="bottom" id="z6L-Rp-Dh5"/>
+                                    <constraint firstItem="ZAb-ax-552" firstAttribute="top" secondItem="fbQ-uV-wxt" secondAttribute="top" id="9gm-fU-oq4"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZAb-ax-552" secondAttribute="bottom" id="HbF-Ax-gyn"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZAb-ax-552" secondAttribute="trailing" id="PKm-hy-Wxh"/>
+                                    <constraint firstItem="ZAb-ax-552" firstAttribute="leading" secondItem="fbQ-uV-wxt" secondAttribute="leading" id="UPQ-4l-ZLa"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="mrO-z6-3iN"/>
+                                </connections>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -48,6 +50,9 @@
                             <constraint firstItem="fbQ-uV-wxt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="vFf-Ry-6TN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imag" destination="ZAb-ax-552" id="ZZH-XX-DIM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
