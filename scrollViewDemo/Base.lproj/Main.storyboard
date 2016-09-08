@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -15,65 +16,26 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="2500" height="2500"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fbQ-uV-wxt">
-                                <rect key="frame" x="20" y="20" width="2460" height="2460"/>
+                                <rect key="frame" x="20" y="20" width="560" height="560"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gdc-sq-GMh">
-                                        <rect key="frame" x="0.0" y="0.0" width="2048" height="2048"/>
-                                        <subviews>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="clownfish-1024x1024-diving-red-sea-coral-worlds-best-diving-sites-4085" translatesAutoresizingMaskIntoConstraints="NO" id="BaJ-6D-lHQ">
-                                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1024"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="1024" id="DEN-3H-jhh"/>
-                                                    <constraint firstAttribute="width" constant="1024" id="RSK-f6-9Ny"/>
-                                                </constraints>
-                                            </imageView>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Kandt-Untitled Landshape No. 5" translatesAutoresizingMaskIntoConstraints="NO" id="dNm-Ue-TYh">
-                                                <rect key="frame" x="1024" y="0.0" width="1024" height="1024"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="1024" id="F81-ng-dV0"/>
-                                                    <constraint firstAttribute="width" constant="1024" id="OyN-S0-cn7"/>
-                                                </constraints>
-                                            </imageView>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="2-BICCHIERE-WORLDS-BEST---BOLLICINE-RCR_138" translatesAutoresizingMaskIntoConstraints="NO" id="FpO-u8-BFR">
-                                                <rect key="frame" x="0.0" y="1024" width="1024" height="1024"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="1024" id="AnE-hY-dj1"/>
-                                                    <constraint firstAttribute="height" constant="1024" id="mSO-t1-7Hd"/>
-                                                </constraints>
-                                            </imageView>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="rwKXCjTRrs5rpWa8hLxSUDSAg9Ja3L-right" translatesAutoresizingMaskIntoConstraints="NO" id="cny-UG-5uw">
-                                                <rect key="frame" x="1024" y="1024" width="1024" height="1024"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="1024" id="Oop-Dk-qqa"/>
-                                                    <constraint firstAttribute="width" constant="1024" id="S6a-6J-d6t"/>
-                                                </constraints>
-                                            </imageView>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="Panorama_View" translatesAutoresizingMaskIntoConstraints="NO" id="lze-e8-aX5">
+                                        <rect key="frame" x="-2809" y="-213" width="7364" height="800"/>
                                         <constraints>
-                                            <constraint firstItem="BaJ-6D-lHQ" firstAttribute="leading" secondItem="Gdc-sq-GMh" secondAttribute="leading" id="04r-t2-hZS"/>
-                                            <constraint firstAttribute="width" constant="2048" id="3F4-fB-u8a"/>
-                                            <constraint firstAttribute="bottom" secondItem="cny-UG-5uw" secondAttribute="bottom" id="8Ye-yK-Pkb"/>
-                                            <constraint firstItem="dNm-Ue-TYh" firstAttribute="top" secondItem="Gdc-sq-GMh" secondAttribute="top" id="V0h-wg-Ksh"/>
-                                            <constraint firstAttribute="trailing" secondItem="dNm-Ue-TYh" secondAttribute="trailing" id="WHy-9B-bmZ"/>
-                                            <constraint firstItem="FpO-u8-BFR" firstAttribute="leading" secondItem="Gdc-sq-GMh" secondAttribute="leading" id="Wlr-KW-fvH"/>
-                                            <constraint firstItem="BaJ-6D-lHQ" firstAttribute="top" secondItem="Gdc-sq-GMh" secondAttribute="top" id="gdI-fp-gsw"/>
-                                            <constraint firstAttribute="height" constant="2048" id="kwj-9J-WE1"/>
-                                            <constraint firstAttribute="bottom" secondItem="FpO-u8-BFR" secondAttribute="bottom" id="yr0-cL-doj"/>
-                                            <constraint firstAttribute="trailing" secondItem="cny-UG-5uw" secondAttribute="trailing" id="zmA-Ps-mJl"/>
+                                            <constraint firstAttribute="width" secondItem="lze-e8-aX5" secondAttribute="height" multiplier="1841:200" id="MfM-xv-ypB"/>
                                         </constraints>
-                                    </view>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.88220186514622567" green="0.49792394543880414" blue="0.9078525641025641" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="Gdc-sq-GMh" secondAttribute="bottom" id="2Bh-Zu-dbQ"/>
-                                    <constraint firstItem="Gdc-sq-GMh" firstAttribute="top" secondItem="fbQ-uV-wxt" secondAttribute="top" id="CLP-ig-JHZ"/>
-                                    <constraint firstAttribute="trailing" secondItem="Gdc-sq-GMh" secondAttribute="trailing" id="Fh8-T5-9ID"/>
-                                    <constraint firstItem="Gdc-sq-GMh" firstAttribute="leading" secondItem="fbQ-uV-wxt" secondAttribute="leading" id="e6O-Dx-Onw"/>
+                                    <constraint firstAttribute="trailing" secondItem="lze-e8-aX5" secondAttribute="trailing" id="0UH-1Q-YMo"/>
+                                    <constraint firstItem="lze-e8-aX5" firstAttribute="top" secondItem="fbQ-uV-wxt" secondAttribute="top" id="7Kr-4s-Yjf"/>
+                                    <constraint firstItem="lze-e8-aX5" firstAttribute="leading" secondItem="fbQ-uV-wxt" secondAttribute="leading" id="T1d-Oh-odw"/>
+                                    <constraint firstItem="lze-e8-aX5" firstAttribute="height" secondItem="fbQ-uV-wxt" secondAttribute="height" id="Wab-WY-tS0"/>
+                                    <constraint firstAttribute="bottom" secondItem="lze-e8-aX5" secondAttribute="bottom" id="z6L-Rp-Dh5"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -86,8 +48,6 @@
                             <constraint firstItem="fbQ-uV-wxt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="vFf-Ry-6TN"/>
                         </constraints>
                     </view>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="2500" height="2500"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -95,9 +55,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="2-BICCHIERE-WORLDS-BEST---BOLLICINE-RCR_138" width="1024" height="1024"/>
-        <image name="Kandt-Untitled Landshape No. 5" width="1024" height="1024"/>
-        <image name="clownfish-1024x1024-diving-red-sea-coral-worlds-best-diving-sites-4085" width="1024" height="1024"/>
-        <image name="rwKXCjTRrs5rpWa8hLxSUDSAg9Ja3L-right" width="1024" height="1024"/>
+        <image name="Panorama_View" width="7364" height="800"/>
     </resources>
 </document>
